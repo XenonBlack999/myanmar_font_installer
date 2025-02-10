@@ -41,4 +41,11 @@ sudo python install_font.py --system
 ## Notes
 - Ensure the script is executed in the same directory as the `.ttf` font files.
 - If fonts do not appear after installation, try restarting your application or session.
+- On Windows, fonts are typically installed in one of two locations:
+
+    System-wide installation (requires admin privileges)
+    📂 C:\Windows\Fonts
+
+    User-specific installation (no admin required)
+    📂 C:\Users\YourUsername\AppData\Local\Microsoft\Windows\Fonts
 
