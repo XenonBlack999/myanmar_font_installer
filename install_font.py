@@ -24,6 +24,7 @@ def install_fonts(system_wide=False):
     font_files = [f for f in os.listdir('.') if f.lower().endswith('.ttf')]
     if not font_files:
         print("No .ttf font files found in the current directory.")
+        print("You need to download myanmar font and place with this tool")
         sys.exit(1)
     
     for font_file in font_files:
