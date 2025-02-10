@@ -16,10 +16,15 @@ This script automatically installs all `.ttf` font files found in the current di
 - `fc-cache` installed (part of `fontconfig` package)
 
 ## Installation & Usage
-Cloning from github 
-```https://github.com/XenonBlack999/myanmar_font_installer.git```
+Cloning from github :
+```sh
+git clone https://github.com/XenonBlack999/myanmar_font_installer.git
+```
 
-```cd myanmar_font_installer```
+```sh
+cd myanmar_font_installer
+```
+
 
 ### User-Level Installation
 Installs fonts to `~/.local/share/fonts/` (no root permissions required):
