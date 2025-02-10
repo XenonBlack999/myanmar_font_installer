@@ -7,8 +7,20 @@ Created on Sun Feb  9 21:14:59 2025
 """
 import os
 import sys
-import shutil
-import subprocess
+def install_module(module_name):
+    try:
+        __import__(module_name)
+    except ImportError:
+        print(f"No module named '{module_name}'. Installing...")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", module_name])
+
+modules = ['shutil', 'subprocess']
+for module in modules:
+    try:
+        install_module(module)
+    except Exception as e:
+        print(f"Error installing module {module}: {e}")
+        
 
 FONT_DIR_SYSTEM = "/usr/share/fonts"
 FONT_DIR_USER = os.path.expanduser("~/.local/share/fonts")
